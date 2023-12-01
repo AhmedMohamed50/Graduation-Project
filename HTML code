@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+
+    <!-- Google Fonts Import -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap">
+
+    <!-- External CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Content Container -->
+    <div id="content">
+
+        <!-- Icon Container -->
+        <div id="fa">Temperature Converter</div>
+        <div id="fa">🌡️</div>
+        <!-- Temperature Conversion Form -->
+        <form id="tempCalc">
+            <label for="temp">Enter Temperature:</label>
+            <input type="number" id="temp" placeholder="Temperature" required>
+
+            <label for="temp_diff">Select Unit:</label>
+            <select id="temp_diff" required>
+                <option value="cel">Celsius</option>
+                <option value="fah">Fahrenheit</option>
+            </select>
+
+            <button type="button" onclick="calculateTemp()">Convert</button>
+
+            <!-- Result Container -->
+            <div id="resultContainer"></div>
+        </form>
+
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
